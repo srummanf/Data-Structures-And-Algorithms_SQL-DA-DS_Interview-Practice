@@ -140,7 +140,7 @@
             companyGrid.innerHTML = companies.map(company => {
                 const problemCount = companyData[company].length;
                 return `
-                    <div class="company-card bg-custom-green border-[0.25rem] border-black rounded-xl p-5 text-center cursor-pointer transition-all duration-200 shadow-[0.25rem_0.25rem_0px_#222] relative overflow-hidden hover:-translate-x-[0.15rem] hover:-translate-y-[0.15rem] hover:shadow-[0.4rem_0.4rem_0px_#222]" 
+                    <div class="company-card bg-custom-green border-[0.25rem] border-black rounded-xl p-5 text-center  transition-all duration-200 shadow-[0.25rem_0.25rem_0px_#222] relative overflow-hidden hover:-translate-x-[0.15rem] hover:-translate-y-[0.15rem] hover:shadow-[0.4rem_0.4rem_0px_#222]" 
                          data-company="${company}" 
                          onclick="selectCompany('${company}')">
                         <h3 class="text-lg md:text-xl font-semibold mb-2 font-space">${company}</h3>
@@ -184,7 +184,7 @@
                 const problemCount = companyData[company].length;
                 const highlightedName = highlightMatch(company, query);
                 return `
-                    <div class="px-5 py-3 cursor-pointer border-b-2 border-gray-200 text-lg font-medium transition-all duration-200 hover:bg-custom-purple hover:text-white last:border-b-0" onclick="selectCompanyFromSearch('${company}')">
+                    <div class="px-5 py-3  border-b-2 border-gray-200 text-lg font-medium transition-all duration-200 hover:bg-custom-purple hover:text-white last:border-b-0" onclick="selectCompanyFromSearch('${company}')">
                         <div>${highlightedName}</div>
                         <div class="text-sm text-gray-600 font-normal hover-parent-hover:text-white">${problemCount} problem${problemCount !== 1 ? 's' : ''}</div>
                     </div>
@@ -295,7 +295,7 @@
                         <td class="p-3 text-sm align-top border-b border-gray-300"><strong>${escapeHtml(problem.problem_name)}</strong></td>
                         <td class="p-3 text-sm align-top border-b border-gray-300">${leetcodeLink}</td>
                         <td class="p-3 text-sm align-top border-b border-gray-300">${solutionLink}</td>
-                        <td class="p-3 text-sm align-middle border-b border-gray-300 max-w-[18.75rem] leading-6 relative cursor-pointer group" 
+                        <td class="p-3 text-sm align-middle border-b border-gray-300 max-w-[18.75rem] leading-6 relative  group" 
                             id="${intuitionId}" 
                             onclick="toggleBlur(this, 'intuition')">
                             <div class="blurred-content blur-sm transition-all duration-300">${escapeHtml(problem.intuition)}</div>
@@ -307,7 +307,7 @@
                                 </div>
                             </div>
                         </td>
-                        <td class="p-3 text-sm align-middle border-b border-gray-300 max-w-[18.75rem] leading-6 whitespace-pre-line relative cursor-pointer group" 
+                        <td class="p-3 text-sm align-middle border-b border-gray-300 max-w-[18.75rem] leading-6 whitespace-pre-line relative  group" 
                             id="${keyStepsId}" 
                             onclick="toggleBlur(this, 'keysteps')">
                             <div class="blurred-content blur-sm transition-all duration-300">${keySteps}</div>

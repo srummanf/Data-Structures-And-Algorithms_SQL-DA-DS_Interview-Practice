@@ -305,7 +305,7 @@ function renderAll(data) {
         <td class="p-2 md:p-3 text-center">
           <i class="fa-star ${
             isStar ? "fas starred" : "far"
-          } cursor-pointer text-lg md:text-xl" data-star-unique-id="${q.uniqueId}"></i>
+          }  text-lg md:text-xl" data-star-unique-id="${q.uniqueId}"></i>
         </td>
       `;
       tbody.appendChild(tr);

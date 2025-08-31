@@ -15,6 +15,7 @@ Use this as a personal revision sheet while practicing coding problems.
 
 - [📘 DSA Cheat Sheet](#-dsa-cheat-sheet)
   - [🔹 Two Pointers and Sliding Window](#-two-pointers-and-sliding-window)
+  - [🔹 Math / Number Theory](#-math--number-theory)
   - [🔹 Testing](#-testing)
 
 ---
@@ -33,8 +34,16 @@ Use this as a personal revision sheet while practicing coding problems.
 | Reverse Words in a String | [LeetCode 151](https://leetcode.com/problems/reverse-words-in-a-string/) | Trim spaces, split words, and reverse their order. Ensure extra spaces are removed and only single spaces remain between words. | Trim leading/trailing spaces . Split by spaces and filter empty strings  . Reverse the list of words  . Join with single space | Amazon, Microsoft, MentorGraphics, MakeMyTrip, Goldman Sachs, Samsung, Adobe, Paytm, Accolite | [CodeStoryWithMIK](https://youtu.be/mdej8UiRCkI?si=xm49eZvYoChULKtj) |
 
 
+## 🔹 Math / Number Theory
+
+| Problem                                        | Link                                                                                     | Intuition (3–4 lines)                                                                                                                                                            | Key Steps / Notes                                                                                   | Company                | Video Tutorial                                                                                      |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------- |
+| Strictly Palindromic Number | [LeetCode 2396](https://leetcode.com/problems/strictly-palindromic-number/) | A number is strictly palindromic if it's palindromic in every base from 2 to n.2. Mathematical proof shows no such number exists for n ≥ 4. For any n ≥ 4, in base n.1, the number n is represented as "10" which is not palindromic. | Always return false . No number n ≥ 4 can be strictly palindromic . Mathematical impossibility due to base n.1 representation | Google, Meta, Microsoft | [Programming Live with Larry](https://www.youtube.com/watch?v=37EtWXDucwQ) |
+
+
 ## 🔹 Testing
 
 | Problem                                        | Link                                                                                     | Intuition (3–4 lines)                                                                                                                                                            | Key Steps / Notes                                                                                   | Company                | Video Tutorial                                                                                      |
 | ---------------------------------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------- | --------------------------------------------------------------------------------------------------- |
 | Reverse Words in a String | [LeetCode 151](https://leetcode.com/problems/reverse-words-in-a-string/) | Trim spaces, split words, and reverse their order. Ensure extra spaces are removed and only single spaces remain between words. | Trim leading/trailing spaces . Split by spaces and filter empty strings  . Reverse the list of words  . Join with single space | Adobe, Paytm, Accolite | [CodeStoryWithMIK](https://youtu.be/mdej8UiRCkI?si=xm49eZvYoChULKtj) |
+| Strictly Palindromic Number | [LeetCode 2396](https://leetcode.com/problems/strictly-palindromic-number/) | A number is strictly palindromic if it's palindromic in every base from 2 to n.2. Mathematical proof shows no such number exists for n ≥ 4. For any n ≥ 4, in base n.1, the number n is represented as "10" which is not palindromic. | Always return false . No number n ≥ 4 can be strictly palindromic . Mathematical impossibility due to base n.1 representation | Google, Meta, Microsoft | [Programming Live with Larry](https://www.youtube.com/watch?v=37EtWXDucwQ) |
