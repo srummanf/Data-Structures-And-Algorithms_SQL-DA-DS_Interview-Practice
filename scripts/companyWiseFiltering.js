@@ -295,30 +295,30 @@
                         <td class="p-3 text-sm align-top border-b border-gray-300"><strong>${escapeHtml(problem.problem_name)}</strong></td>
                         <td class="p-3 text-sm align-top border-b border-gray-300">${leetcodeLink}</td>
                         <td class="p-3 text-sm align-top border-b border-gray-300">${solutionLink}</td>
-                        <td class="p-3 text-sm align-middle border-b border-gray-300 max-w-[18.75rem] leading-6 relative  group" 
-                            id="${intuitionId}" 
-                            onclick="toggleBlur(this, 'intuition')">
-                            <div class="blurred-content blur-sm transition-all duration-300">${escapeHtml(problem.intuition)}</div>
-                            <div class="blur-overlay absolute inset-0 flex items-center justify-center bg-blue-100 bg-opacity-70 rounded">
-                                <div class="text-center">
-                                    <i class="fas fa-eye-slash text-blue-600 text-lg mb-1 block group-hover:hidden"></i>
-                                    <i class="fas fa-eye text-blue-600 text-lg mb-1 hidden group-hover:block"></i>
-                                    <div class="text-xs text-blue-700 font-medium hidden group-hover:block">Click to view</div>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="p-3 text-sm align-middle border-b border-gray-300 max-w-[18.75rem] leading-6 whitespace-pre-line relative  group" 
-                            id="${keyStepsId}" 
-                            onclick="toggleBlur(this, 'keysteps')">
-                            <div class="blurred-content blur-sm transition-all duration-300">${keySteps}</div>
-                            <div class="blur-overlay absolute inset-0 flex items-center justify-center bg-blue-100 bg-opacity-70 rounded">
-                                <div class="text-center">
-                                    <i class="fas fa-eye-slash text-blue-600 text-lg mb-1 block group-hover:hidden"></i>
-                                    <i class="fas fa-eye text-blue-600 text-lg mb-1 hidden group-hover:block"></i>
-                                    <div class="text-xs text-blue-700 font-medium hidden group-hover:block">Click to view</div>
-                                </div>
-                            </div>
-                        </td>
+                        // <td class="p-3 text-sm align-middle border-b border-gray-300 max-w-[18.75rem] leading-6 relative  group" 
+                        //     id="${intuitionId}" 
+                        //     onclick="toggleBlur(this, 'intuition')">
+                        //     <div class="blurred-content blur-sm transition-all duration-300">${escapeHtml(problem.intuition)}</div>
+                        //     <div class="blur-overlay absolute inset-0 flex items-center justify-center bg-blue-100 bg-opacity-70 rounded">
+                        //         <div class="text-center">
+                        //             <i class="fas fa-eye-slash text-blue-600 text-lg mb-1 block group-hover:hidden"></i>
+                        //             <i class="fas fa-eye text-blue-600 text-lg mb-1 hidden group-hover:block"></i>
+                        //             <div class="text-xs text-blue-700 font-medium hidden group-hover:block">Click to view</div>
+                        //         </div>
+                        //     </div>
+                        // </td>
+                        // <td class="p-3 text-sm align-middle border-b border-gray-300 max-w-[18.75rem] leading-6 whitespace-pre-line relative  group" 
+                        //     id="${keyStepsId}" 
+                        //     onclick="toggleBlur(this, 'keysteps')">
+                        //     <div class="blurred-content blur-sm transition-all duration-300">${keySteps}</div>
+                        //     <div class="blur-overlay absolute inset-0 flex items-center justify-center bg-blue-100 bg-opacity-70 rounded">
+                        //         <div class="text-center">
+                        //             <i class="fas fa-eye-slash text-blue-600 text-lg mb-1 block group-hover:hidden"></i>
+                        //             <i class="fas fa-eye text-blue-600 text-lg mb-1 hidden group-hover:block"></i>
+                        //             <div class="text-xs text-blue-700 font-medium hidden group-hover:block">Click to view</div>
+                        //         </div>
+                        //     </div>
+                        // </td>
                     </tr>
                 `;
             }).join('');
