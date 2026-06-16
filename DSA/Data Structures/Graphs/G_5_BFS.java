@@ -47,6 +47,7 @@ class G_5_BFS {
         for (int i = 0; i < 5; i++) {
             adj.add(new ArrayList<>());
         }
+        
         adj.get(0).add(1);
         adj.get(1).add(0);
         adj.get(0).add(4);
