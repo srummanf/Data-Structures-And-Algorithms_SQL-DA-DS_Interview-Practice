@@ -30,6 +30,8 @@ At most 104 calls will be made to pick. */
 
 import java.util.Random;
 
+import Blinkit.Solution;
+
 class Solution {
     private int[] nums;
     private Random rand;
