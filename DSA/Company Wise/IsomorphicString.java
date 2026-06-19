@@ -26,7 +26,8 @@ Constraints:
 t.length == s.length
 s and t consist of any valid ascii character. */
 
-class Solution {
+import java.util.HashMap;
+class IsomorphicString {
 
   public boolean isIsomorphic(String s, String t) {
     HashMap<Character, Character> hm1 = new HashMap<>();
@@ -45,5 +46,13 @@ class Solution {
     }
 
     return true;
+  }
+
+
+  public static void main(String[] args) {
+    IsomorphicString obj = new IsomorphicString();
+    System.out.println(obj.isIsomorphic("egg", "add")); // Output: true
+    System.out.println(obj.isIsomorphic("foo", "bar")); // Output: false
+    System.out.println(obj.isIsomorphic("paper", "title")); // Output: true
   }
 }
