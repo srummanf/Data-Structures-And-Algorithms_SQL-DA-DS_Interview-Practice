@@ -1,4 +1,4 @@
-# DSA Hub
+# Data Structures and Algorithms for Inrerviews
 
 A structured collection of Data Structures and Algorithms problems, solutions, notes, and interview-preparation material.
 
