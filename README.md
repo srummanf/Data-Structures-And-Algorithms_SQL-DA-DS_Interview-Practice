@@ -2,6 +2,8 @@
 
 A structured collection of Data Structures and Algorithms problems, solutions, notes, and interview-preparation material.
 
+![1782116882088](image/README/1782116882088.png)
+
 This repository is a study and practice hub: a place to keep solved DSA problems organized by topic, data structure, company, and supporting interview resources.
 
 # A–Z DSA Concepts Reference
