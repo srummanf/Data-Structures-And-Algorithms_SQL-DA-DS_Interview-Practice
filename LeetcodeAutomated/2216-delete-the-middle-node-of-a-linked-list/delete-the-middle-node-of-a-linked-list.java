@@ -1,3 +1,4 @@
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -9,9 +10,11 @@
  * }
  */
 class Solution {
-   
-        public ListNode deleteMiddle(ListNode head) {
-        if (head.next == null) return null;
+
+    public ListNode deleteMiddle(ListNode head) {
+        if (head.next == null) {
+            return null;
+        }
 
         ListNode slow = head;
         ListNode fast = slow.next.next;
@@ -23,6 +26,6 @@ class Solution {
 
         slow.next = slow.next.next;
         return head;
-    
+
     }
 }
