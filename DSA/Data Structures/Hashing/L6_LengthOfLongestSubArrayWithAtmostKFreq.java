@@ -9,7 +9,7 @@ Return the length of the longest good subarray of nums.
 
 A subarray is a contiguous non-empty sequence of elements within an array.
 
- 
+
 
 Example 1:
 
@@ -52,9 +52,9 @@ import java.util.HashMap;
 /**
   * LengthOfLongestSubArrayWithAtmostKFreq
   */
- public class LengthOfLongestSubArrayWithAtmostKFreq {
+class LengthOfLongestSubArrayWithAtmostKFreq {
  
-    public int maxSubarrayLength(int[] nums, int k) {
+    int maxSubarrayLength(int[] nums, int k) {
         int l = 0;
         int result = 0;
         HashMap<Integer, Integer> m = new HashMap<>();

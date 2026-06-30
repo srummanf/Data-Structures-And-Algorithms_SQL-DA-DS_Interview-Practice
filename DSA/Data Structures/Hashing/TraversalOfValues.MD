@@ -1,4 +1,4 @@
-### 1. Traversing the Keys of a `HashMap`
+> ### 1. (BEST)Traversing the Keys of a `HashMap`
 
 ```java
 import java.util.HashMap;
@@ -13,6 +13,7 @@ public class Main {
         // Iterating over keys
         for (String key : map.keySet()) {
             System.out.println("Key: " + key);
+          	System.out.println("Value: " + map.get(key));
         }
     }
 }
@@ -150,7 +151,6 @@ public class Main {
 ```
 
 These snippets cover various ways to traverse through a `HashMap` in Java.
-
 
 # To retrieve a key for a particular value or vice versa in a `HashMap`, you can use the following approaches:
 

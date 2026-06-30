@@ -1,3 +1,6 @@
+/** Given a string s, find the length of the longest substring without repeating characters. */
+
+import java.util.HashMap;
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         HashMap<Character, Integer> hm = new HashMap<>();

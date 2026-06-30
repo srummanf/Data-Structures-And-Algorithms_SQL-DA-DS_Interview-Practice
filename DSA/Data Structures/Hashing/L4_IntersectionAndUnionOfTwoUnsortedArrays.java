@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class IntersectionAndUnionOfTwoUnsortedArrays {
+public class L4_IntersectionAndUnionOfTwoUnsortedArrays {
     void intersection(int a[], int b[]) {
         HashSet<Integer> m = new HashSet<>();
         HashSet<Integer> n = new HashSet<>();
@@ -33,7 +33,7 @@ public class IntersectionAndUnionOfTwoUnsortedArrays {
     public static void main(String args[]) {
         int a[] = { 10, 15, 20, 15, 30, 30, 5 };
         int b[] = { 30, 5, 30, 80 };
-        IntersectionAndUnionOfTwoUnsortedArrays i = new IntersectionAndUnionOfTwoUnsortedArrays();
+        L4_IntersectionAndUnionOfTwoUnsortedArrays i = new L4_IntersectionAndUnionOfTwoUnsortedArrays();
         System.out.println("Intersection of two arrays is: ");
         i.intersection(a, b);
         System.out.println("\nUnion of two arrays is: ");
