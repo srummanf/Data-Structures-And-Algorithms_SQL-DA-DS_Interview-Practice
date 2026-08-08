@@ -1,3 +1,8 @@
+// Explain this code
+// This code finds the minimum effort path from the top-left corner to the bottom-right corner of a 2D grid.
+// The effort of a path is defined as the maximum absolute difference in heights between consecutive cells in the path.
+// It uses a modified Dijkstra's algorithm with a priority queue to explore cells in order of increasing effort.
+
 class Solution {
     public int minimumEffortPath(int[][] heights) {
         // Create a priority queue containing arrays of cells

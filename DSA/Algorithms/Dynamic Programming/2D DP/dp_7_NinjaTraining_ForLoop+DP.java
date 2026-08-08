@@ -1,6 +1,4 @@
 //  Striver DP 7 : https://www.youtube.com/watch?v=AE39gJYuRog&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=8
-
-
 /** Problem statement
 Ninja is planing this ‘N’ days-long training schedule. Each day, he can perform any one of these three activities. 
 (Running, Fighting Practice or Learning New Moves). 
@@ -59,7 +57,19 @@ Sample Input 2:
 5 100 11
 Sample Output 2:
 45
-110 */
+110 
+
+
+Code Explanation:
+last in the parameter is used to keep track of the last activity performed by the Ninja.
+last = 0 means the last activity was Running (Task 0).
+last = 1 means the last activity was Fighting Practice (Task 1).
+last = 2 means the last activity was Learning New Moves (Task 2).
+last = 3 means no activity was performed on the previous day (this is used for the first day).
+
+
+*/
+
 import java.util.*;
 
 class dp_7_NinjaTraining {
@@ -67,7 +77,7 @@ class dp_7_NinjaTraining {
   // -------------------------------------------------------------- RECURSION --------------------------------------------------------------
   
   int maxPointsRecursion(int day, int last, int a[][]) {
-    // Base Case 
+    // Base Case
     if (day == 0) {
       int maxi = 0;
       for (int i = 0; i < 3; i++) {
@@ -78,6 +88,7 @@ class dp_7_NinjaTraining {
       return maxi;
     }
     
+    // Recursive Case
     int maxi2 = 0;
     for (int i = 0; i < 3; i++) {
       if (i != last) {

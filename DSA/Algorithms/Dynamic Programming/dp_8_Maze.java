@@ -1,5 +1,9 @@
 // DP 8. Grid Unique Paths | Learn Everything about DP on Grids | ALL TECHNIQUES : https://www.youtube.com/watch?v=sdE0A2Oxofw
 
+// Problem Statement : Given a grid of size m*n, find the number of unique paths from top left to bottom right. 
+// You can only move either down or right at any point in time.
+
+
 /**
  1. Express everything in terms of i,j
  2. Do stuff
@@ -12,12 +16,12 @@
  * if(i==0 && j==0) return 1;
  * if(i<0 || j<0) return 0;
  * up= f(i-1,j);
- * down= f(i,j-1);
- * return up+down;
+ * left= f(i,j-1);
+ * return up+left;
  */
 
 // Top Down - Memoization
-//  dp[i][j] = up+down
+//  dp[i][j] = up+left
 
 // Bottom Up - Tabulation
 /** dp[0][0] = 1
@@ -25,8 +29,8 @@
  * for(j=0;j<m;j++) {
  * if(i==0 && j==0) dp[i][j] = 1;
  * if(i>0) up= dp[i-1][j];
- * if(j>0) down= dp[i][j-1];
- * dp[i][j] = up+down;
+ * if(j>0) left= dp[i][j-1];
+ * dp[i][j] = up+left;
  */
 
 // Bottom Up - Tabulation - Optimized

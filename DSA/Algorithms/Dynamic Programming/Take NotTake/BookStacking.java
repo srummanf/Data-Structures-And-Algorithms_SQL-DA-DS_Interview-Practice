@@ -25,8 +25,9 @@ Input: books = [[1,3],[2,4],[3,2]], shelfWidth = 6
 Output: 4
   */
 
+import java.util.Arrays;
 
- class Solution {
+ class BookStacking {
     public int f(int idx, int remaining_width, int currentHeight, int[][] books, int shelfWidth, int[][] dp) {
         if (idx >= books.length)
             return currentHeight;
@@ -51,5 +52,12 @@ Output: 4
         for (int[] a : dp)
             Arrays.fill(a, -1);
         return f(0, shelfWidth, 0, books, shelfWidth, dp);
+    }
+
+    public static void main(String[] args) {
+        BookStacking b = new BookStacking();
+        int[][] books = { { 1, 1 }, { 2, 3 }, { 2, 3 }, { 1, 1 }, { 1, 1 }, { 1, 1 }, { 1, 2 } };
+        int shelfWidth = 4;
+        System.out.println(b.minHeightShelves(books, shelfWidth));
     }
 }

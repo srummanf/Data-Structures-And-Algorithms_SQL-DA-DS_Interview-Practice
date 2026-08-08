@@ -1,4 +1,5 @@
 /** DP 9. Unique Paths 2 | DP on Grid with Maze Obstacles : https://www.youtube.com/watch?v=TmhpgXScLyY&t=97s */
+// Problem Statement : Given a grid of size m*n, find the number of unique paths from top left to bottom right.
 
 import java.util.Arrays;
 
