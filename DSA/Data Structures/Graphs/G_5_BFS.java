@@ -1,14 +1,13 @@
 /** Steps in BFS
 
-1. Make BFS List, vis[] and Queue
+1. Make BFS List DS, boolean vis[] and Queue
 2. Add src in Q
 3. Make vis[src] = true
 
 Now until Q isn't empty
 4. Q.poll() --> node AND bfs.add(node)
 5. Check all neighbours of this node using for loop
-6. if neighbour isn't visited, (vis[ngh]==false) 
-7. 	then make vis[ngh] = true AND Q.add(ngh)
+6. if neighbour isn't visited, then make vis[ngh] = true AND Q.add(ngh)
 
  */
 import java.util.*;

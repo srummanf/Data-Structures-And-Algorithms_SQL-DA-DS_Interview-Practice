@@ -6,21 +6,21 @@
  * for each neighbours, if not visited dfs(ngh, vis, adj)
  */
 
-private void dfs(char[][] grid, boolean[][] vis, int i, int j) {
-        int rows = grid.length;
-        int cols = grid[0].length;
+// private void dfs(char[][] grid, boolean[][] vis, int i, int j) {
+//         int rows = grid.length;
+//         int cols = grid[0].length;
 
-        if (i < 0 || i >= rows || j < 0 || j >= cols || grid[i][j] == '0' || vis[i][j]) {
-            return;
-        }
+//         if (i < 0 || i >= rows || j < 0 || j >= cols || grid[i][j] == '0' || vis[i][j]) {
+//             return;
+//         }
 
-        vis[i][j] = true;
+//         vis[i][j] = true;
 
-        dfs(grid, vis, i + 1, j);
-        dfs(grid, vis, i - 1, j);
-        dfs(grid, vis, i, j + 1);
-        dfs(grid, vis, i, j - 1);
-    }
+//         dfs(grid, vis, i + 1, j);
+//         dfs(grid, vis, i - 1, j);
+//         dfs(grid, vis, i, j + 1);
+//         dfs(grid, vis, i, j - 1);
+//     }
 
 
     // =============================  x x x x x x x x x x  ===============================
@@ -62,7 +62,7 @@ class G_6_DFS_Recursive {
     int nodes = 5;
     boolean[] vis = new boolean[nodes];
     Arrays.fill(vis, false);
-    int src = 0;
-    dfs(2, adj, vis);
+    int src = 02;
+    dfs(src, adj, vis);
   }
 }
