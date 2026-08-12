@@ -1,5 +1,17 @@
 // DP 10 : https://www.youtube.com/watch?v=_rgTlyky1uQ&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=11&t=4s
 
+/** Problem Statement : Given a grid of size m*n, find the minimum path sum from top left to bottom right.
+ * Sample Input 1:
+ * 1 3 1
+ * 1 5 1
+ * 4 2 1
+ * Sample Output 1:
+ * 7
+ * 
+ * Explanation of sample input 1:
+ * The path 1→3→1→1→1 minimizes the sum.
+ */
+
 // Recursive Solution
 /**
  * if(i==0 && j==0) return a[0][0];

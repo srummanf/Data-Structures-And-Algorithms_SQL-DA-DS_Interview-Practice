@@ -1,4 +1,3 @@
-
 # Converting Top-Down DP to Bottom-Up DP
 
 If you already know how to write **Top-Down DP with Memoization**, converting it to **Bottom-Up DP (Tabulation)** is mostly a mechanical process.

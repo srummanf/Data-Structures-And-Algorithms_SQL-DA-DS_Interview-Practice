@@ -3,12 +3,15 @@
 
 This structured learning curriculum is carefully compiled using core engineering methodologies from the open-source GitHub **System Design Primer** (by Donne Martin). Designed for students and aspiring engineers, it consolidates complex large-scale architecture principles into a high-intensity, 30-day timeline. The final two weeks are explicitly reserved for hands-on operational practice across both baseline and advanced real-world system patterns.
 
+Link : [docs.google.com/document/u/0/d/1oClX-bi3dIK_aJF7KYb1mlltybiK4QhN4VvfWgWisjg/mobilebasic?pli=1](https://docs.google.com/document/u/0/d/1oClX-bi3dIK_aJF7KYb1mlltybiK4QhN4VvfWgWisjg/mobilebasic?pli=1)
+
 ---
 
 ## Weekly Breakdown Overview
 
-| Week             | Focus Theme                                 | Primary Goal                                                                           |
-| ---------------- | ------------------------------------------- | -------------------------------------------------------------------------------------- |
+
+| Week       | Focus Theme                                 | Primary Goal                                                                           |
+| ------------ | --------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | **Week 1** | Foundations & Scalability Primitives        | Master core abstractions, performance indicators, and basic infrastructure elements.   |
 | **Week 2** | Data Tiers & Distributed Systems Theory     | Deconstruct data storage models, caching, data consistency trade-offs, and messaging.  |
 | **Week 3** | Pure Practice: Baseline Fundamental Systems | Apply the 4-step interview framework to standard, predictable designs.                 |
@@ -22,8 +25,9 @@ Focus on understanding how computers communicate across networks, how workloads 
 
 ### Day-by-Day Syllabus
 
-| Day             | Topic                                        | Core Concepts Covered                                                                                                                                                                                       |
-| --------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+| Day       | Topic                                        | Core Concepts Covered                                                                                                                                                                                       |
+| ----------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Day 1** | Design Evaluation Metrics & Scale Frameworks | Performance vs. Scalability (bottlenecks under increasing load); Latency vs. Throughput (transaction speed vs. delivery capacity); Back-of-the-envelope estimations for memory, storage, and CPU bandwidth. |
 | **Day 2** | Application Tiers & Scaling Methods          | Vertical Scaling (Scale Up) vs. Horizontal Scaling (Scale Out); Stateless Application Tier for decoupling state to scale compute instances out.                                                             |
 | **Day 3** | Network Protocols & Communication Patterns   | Network layers: IP, TCP, and UDP characteristics; Application Layer Protocols: HTTP, HTTPS, WebSockets (bi-directional communication), and RPC/gRPC.                                                        |
@@ -40,8 +44,9 @@ Shift focus to where data lives, how consistency is managed across multiple data
 
 ### Day-by-Day Syllabus
 
-| Day              | Topic                                                 | Core Concepts Covered                                                                                                                                                                                    |
-| ---------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+| Day        | Topic                                                 | Core Concepts Covered                                                                                                                                                                                    |
+| ------------ | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Day 8**  | Relational Databases & Scaling Operations             | RDBMS: ACID transactions and structured optimization; Master-Slave (Read Replication) and Master-Master multi-write replication models.                                                                  |
 | **Day 9**  | Non-Relational Storage Models & Database Partitioning | NoSQL Categories: Key-Value, Document, Wide-Column, Graph stores, and when to opt out of relational properties; Database Sharding: horizontal partitioning, shard key selection, re-sharding challenges. |
 | **Day 10** | Theoretical Guardrails: CAP & PACELC Theorems         | CAP Theorem: Availability + Partition Tolerance (AP) vs. Consistency + Partition Tolerance (CP); Consistency Patterns: Weak, Eventual, and Strong consistency trade-offs.                                |
@@ -56,8 +61,9 @@ Shift focus to where data lives, how consistency is managed across multiple data
 
 For every system design question in Weeks 3 and 4, strictly apply the system design primer's systematic four-step blueprint:
 
-| Step             | Name                                            | Description                                                                                                                                         |
-| ---------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+| Step       | Name                                            | Description                                                                                                                                         |
+| ------------ | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Step 1** | Outline Use Cases, Constraints, and Assumptions | Define scope, core features, expected users, Read vs. Write scale ratios, and target data sizing profiles.                                          |
 | **Step 2** | Create a High-Level Design                      | Sketch an end-to-end component blueprint showing core clients, load managers, application entry nodes, and persistence tiers.                       |
 | **Step 3** | Design Core Components                          | Deep-dive into database schema design, specific API signatures, hash generation strategies, or specific cache invalidation timelines.               |
@@ -71,8 +77,9 @@ Focus on predictable, deterministic business logic questions. Learn to execute c
 
 ### Day-by-Day Case Studies
 
-| Day              | System to Design                             | Core Topics                                                                                                                     |
-| ---------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+
+| Day        | System to Design                             | Core Topics                                                                                                                     |
+| ------------ | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | **Day 15** | URL Shortening Service (e.g., Bitly)         | Base62 encoding, MD5 hashing, collision handling, and optimizing for massive read redirection using caches.                     |
 | **Day 16** | Scalable Pastebin Engine                     | Object storage integrations for text payloads, expiration metadata management, and database schema creation.                    |
 | **Day 17** | Enterprise API Rate Limiter                  | Token Bucket, Leaky Bucket, and Sliding Window Log algorithms implemented on Redis clusters.                                    |
@@ -89,8 +96,9 @@ Deconstruct massive multi-user concurrent systems with high cross-boundary data 
 
 ### Day-by-Day Case Studies
 
-| Day                    | System to Design                                               | Core Topics                                                                                                                                                                                  |
-| ---------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+| Day              | System to Design                                               | Core Topics                                                                                                                                                                                  |
+| ------------------ | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Day 22**       | Distributed Financial Ledger System (e.g., Mint / Stripe Core) | Absolute data consistency patterns, idempotent request handling, transaction replay logs, and dual-entry bookkeeping rules.                                                                  |
 | **Day 23**       | Real-Time Instant Messaging Service (e.g., WhatsApp / Slack)   | Keeping millions of active WebSocket connections, ephemeral message queue patterns, user presence systems, and database clustering.                                                          |
 | **Day 24**       | Social Media Feed Generator (e.g., Twitter/X Timeline)         | Fan-out on Write (Push model) vs. Fan-out on Read (Pull model), hybrid caching systems for celebrity accounts, and fast pagination.                                                          |

@@ -281,8 +281,177 @@ For every LLD problem, follow this sequence:
 
 ---
 
+I extracted the text from the SVG. It contains an **LLD Roadmap** followed by **50 interview problems**.
+
+## 1. LLD Roadmap
+
+### OOPS Concepts
+
+* Class & Objects
+* Constructor
+* Inheritance
+* Encapsulation
+* Polymorphism
+
+  * Compile Time
+
+    * Method Overloading
+  * Run Time
+
+    * Method Overriding
+    * Dynamic Method Dispatch
+* Abstraction
+* Abstract Class vs Interface
+
+### Core Concepts
+
+* Dependency Injection
+* API Design
+* Functional Interfaces & Lambdas
+* Immutability & Value Objects
+* Generics & Type Safety
+
+### Design Patterns
+
+**Creational**
+
+* Singleton
+* Factory Method
+* Abstract Factory
+* Builder
+* Prototype
+
+**Structural**
+
+* Adapter
+* Decorator
+* Composite
+* Facade
+* Proxy
+* Bridge
+
+**Behavioral**
+
+* Observer
+* Strategy
+* Iterator
+* Command
+* State
+* Template Method
+
+### SOLID Principles
+
+* Single Responsibility
+* Open/Closed
+* Liskov Substitution
+* Interface Segregation
+* Dependency Inversion
+
+### UML & Modeling
+
+* Class Diagrams
+* Association
+* Aggregation
+* Composition
+* Dependency
+* Dependency vs Inheritance
+* IS-A vs HAS-A Relationship
+* Multiplicity
+
+### Concurrency & Thread Safety
+
+* Race Conditions
+* Synchronization Primitives
+* Locks vs Synchronized
+* Atomic Variables
+* Immutability for Thread Safety
+
+### Code Quality & Clean Code
+
+* Meaningful Names
+* One Abstraction Level per Method
+* Small Classes
+* Exception Handling
+
+  * Checked vs Unchecked Exceptions
+  * Custom Exception Classes
+  * Exception Hierarchy Design
+  * Never Swallow Exceptions (just catch + ignore)
+  * Fail Fast Principle
+
+### Application Logging
+
+* Log Levels
+
+  * DEBUG
+  * INFO
+  * WARN
+  * ERROR
+* What to Log vs What Not to Log
+* Structured Logging
+
+---
+
+# 2. 50 Most Asked LLD Interview Problems
+
+1. Design Parking Lot
+2. Design Vending Machine
+3. Design ATM
+4. Design Library Management System
+5. Design Elevator System
+6. Design Traffic Light System
+7. Design Meeting Room Scheduler
+8. Design Snake and Ladder Game
+9. Design Tic-Tac-Toe Game
+10. Design Chess Game
+11. Design Splitwise
+12. Design URL Shortner
+13. Design BookMyShow
+14. Design Uber
+15. Design Food Delivery Application
+16. Design Online Hotel Booking System
+17. Design Airline Management System
+18. Design Restaurant Management System
+19. Design Inventory Management System
+20. Design Car Rental System
+21. Design Cache System
+22. Design Rate Limiter
+23. Design Logging Framework
+24. Design Notification System
+25. Design Payment System (LLD)
+26. Design File System
+27. Design Task Scheduler
+28. Design Search Autocomplete System
+29. Design API Throttling System
+30. Design Feature Flag System
+31. Design LinkedIn (LLD focus)
+32. Design Amazon Order Management System
+33. Design Truecaller
+34. Design Chat Application (WhatsApp-like)
+35. Design Community Discussion Platform (Reddit-like)
+36. Design Online Voting System
+37. Design Calendar Application
+38. Design Learning Management System
+39. Design Stock Exchange System
+40. Design CricBuzz
+41. Design BookMyShow Seat Locking
+42. Design Distributed ID Generator (Snowflake-like)
+43. Design Circuit Breaker
+44. Design Retry with Backoff Mechanism
+45. Design Metrics and Monitoring System
+46. Design Authentication System
+47. Design Role-Based Access Control System (RBAC)
+48. Design Web Crawler (LLD focus)
+49. Design Recommendation Engine (LLD focus)
+50. Design Event-Driven Producer-Consumer System
+
+**Note:** I preserved the terminology from the SVG, including typos such as **"Method Overlaoding," "Dynamic Method Dispatcj,"** and **"URL Shortner."**
+
+# 
+
 # Goal
 
 After completing this roadmap, you should be comfortable solving **50+ popular Low-Level Design interview problems** commonly asked in software engineering interviews.
 
 > Source : [codewithnishchal](https://whimsical.com/lld-VDPw8YTocytiVvG7AFBjL9?fbclid=PARlRTSASkrrdleHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaeHKE67AnvExWn7LqffEDEnghtBw7NHxaxYG-z5Gl6xcP-97FPORjEj3QrZUQ_aem_0wtjPe0FPkDPOSQpWRRWBw "codewithnishchal")
+>

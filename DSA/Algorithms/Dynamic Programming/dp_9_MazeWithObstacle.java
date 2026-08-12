@@ -6,7 +6,10 @@ import java.util.Arrays;
 class dp_9_MazeWithObstacle {
 
   public static int recursion(int i, int j, int maze[][]) {
+    // Obstacle Check
     if (i >= 0 && j >= 0 && maze[i][j] == -1) return 0;
+
+    // General Basecases
     if (i == 0 && j == 0) return 1;
     if (i < 0 || j < 0) return 0;
     int up = recursion(i - 1, j, maze);
