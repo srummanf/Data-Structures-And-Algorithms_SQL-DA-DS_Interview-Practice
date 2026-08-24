@@ -1,3 +1,6 @@
+// learn the fundamental rule:
+// When looking for K largest elements → maintain a min-heap of size K.
+
 class KthLargest {
 
     PriorityQueue<Integer> pq;
