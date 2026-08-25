@@ -22,12 +22,12 @@ Output: 2
 Explanation: The maximum possible minimum distance will be 2 when 2 cows are placed at positions {1, 3}. Here distance between cows is 2. */
 import java.util.*;
 
-public class Solution {
-    public static boolean isPossible(int diff, int cows, int []stalls, int n){
+public class BS17_AggressiveCows {
+    public static boolean canWePlace(int loc, int cows, int []stalls, int n){
         int ctr = 1;
         int lastPos = stalls[0];
-        for(int i=1; i<n, i++){
-            if(stalls[i]-lastPos>=diff){
+        for(int i=1; i<n; i++){
+            if(stalls[i]-lastPos>=loc){
                 ctr++;
                 lastPos = stalls[i];
                 if(ctr==cows) return true;
@@ -38,34 +38,27 @@ public class Solution {
     public static int aggressiveCows(int []stalls, int k) {
         //    Write your code here.
         Arrays.sort(stalls);
-        int ans = Integer.MIN_VALUE;
+        int ans = Integer.MIN_VALUE; // or -1
         int n = stalls.length;
         int maxRange = stalls[n-1]-stalls[0];
         int l = 0;
         int r =  maxRange;
         while(l<=r){
-            int diff = (l+r)/2;
-            if(isPossible(diff, k, stalls, n)){
-                ans = diff;
-                l = diff+1;
+            int mid = (l+r)/2;
+            if(canWePlace(mid, k, stalls, n)){
+                ans = mid;
+                l = mid+1;
             } else {
-                r = diff-1;
+                r = mid-1;
             }
         }
 
         return ans;
     }
-    public static int aggressiveCows_BinarySearch(int []stalls, int k) {
-        //    Write your code here.
-        Arrays.sort(stalls);
-        int ans = Integer.MIN_VALUE;
-        int n = stalls.length;
-        int maxRange = stalls[n-1]-stalls[0];
-        for(int diff=1; diff<=maxRange; diff++) {
-            if(isPossible(diff, k, stalls, n)){
-                ans = Math.max(ans, diff);
-            }
-        }
-        return ans;
+
+    public static void main(String[] args) {
+        int []stalls = {1, 2, 3};
+        int k = 2;
+        System.out.println(aggressiveCows(stalls, k));
     }
 }

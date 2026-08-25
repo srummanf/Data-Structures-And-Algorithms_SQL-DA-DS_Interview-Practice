@@ -1,5 +1,11 @@
 // A great question on Resource Allocation and Priority Queue
 
+
+/**Problem Statement: You are given an integer n and an array of meetings. Each meeting is represented as [start, end]. 
+ * You have n rooms numbered from 0 to n - 1. Meetings are assigned to rooms based on availability and room number. 
+ * Return the room number that hosted the most meetings. */
+
+
 import java.util.*;
 
 // https://leetcode.com/problems/meeting-rooms-iii/
