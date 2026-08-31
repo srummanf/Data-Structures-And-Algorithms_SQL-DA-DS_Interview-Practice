@@ -34,8 +34,9 @@ Constraints:
 1 <= k <= cardPoints.length */
 
 
-class Solution {
+class L2_MaxCardSum {
     public int maxScore(int[] cardPoints, int k) {
+
         int n = cardPoints.length;
         int maxi = 0;
 
@@ -58,5 +59,12 @@ class Solution {
 
         return maxi;
         
+    }
+
+    public static void main(String[] args) {
+        L2_MaxCardSum obj = new L2_MaxCardSum();
+        int[] cardPoints = {1,2,3,4,5,6,1};
+        int k = 3;
+        System.out.println(obj.maxScore(cardPoints, k));
     }
 }

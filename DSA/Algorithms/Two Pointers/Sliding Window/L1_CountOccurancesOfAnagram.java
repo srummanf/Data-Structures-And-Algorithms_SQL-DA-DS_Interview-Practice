@@ -1,3 +1,8 @@
+/** Problem Statement: Count the number of occurrences of an anagram of a pattern string in a text string. 
+*/
+
+//Visualization: https://www.youtube.com/watch?v=mrUBUWb23hk&list=PLpIkg8OmuX-J2Ivo9YdY7bRDstPPTVGvN&index=1
+
 // Amazon, Intuit, Microsoft, Flipkart
 
 public class L1_CountOccurancesOfAnagram {
@@ -49,5 +54,3 @@ public class L1_CountOccurancesOfAnagram {
     }
 
 }
-
-//Visualization: https://www.youtube.com/watch?v=mrUBUWb23hk&list=PLpIkg8OmuX-J2Ivo9YdY7bRDstPPTVGvN&index=1

@@ -1,3 +1,6 @@
+/** Problem: Number of Connected Components in an Undirected Graph
+ */
+
 import java.util.*;
 
 class G_7_NumberOfConnectedComponents {

@@ -1,4 +1,8 @@
-class Solution {
+/** Problem Statement: Given two strings s and t, return the minimum window in s which will contain
+ *  all the characters in t. */
+
+
+class L12_MinWindowSS {
     public String minWindow(String source, String target) {
         // Array to store the frequency of characters needed from the target string
         int[] charFrequencyInTarget = new int[128];
@@ -54,5 +58,12 @@ class Solution {
       
         // Return the minimum window substring or an empty string if no such window exists
         return minWindowStart < 0 ? "" : source.substring(minWindowStart, minWindowStart + minLength);
+    }
+
+    public static void main(String[] args) {
+        L12_MinWindowSS obj = new L12_MinWindowSS();
+        String source = "ADOBECODEBANC";
+        String target = "ABC";
+        System.out.println(obj.minWindow(source, target)); // Output: "BANC"
     }
 }
