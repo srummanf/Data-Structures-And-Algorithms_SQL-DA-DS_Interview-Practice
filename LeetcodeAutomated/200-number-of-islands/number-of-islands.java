@@ -15,6 +15,10 @@ class Solution {
     }
 
     public int numIslands(char[][] grid) {
+
+        if (grid == null || grid.length == 0) return 0;
+
+        
         int rows = grid.length;
         int cols = grid[0].length;
 
